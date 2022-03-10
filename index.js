@@ -10,12 +10,12 @@ for(let i = 0; i <= 100; i++){
 mapFor.forEach((value, key)=>{
     console.log(value)
     if(key % 3 === 0){
-        console.log("divaded the 3")
+        console.log(`${key}"divaded the 3"`)
     }
     if(key % 5 === 0){
-        console.log("oops here is 5")
+        console.log(`${key}"oops here is 5"`)
     }else if(key % 3 === 0 && key % 5 === 0){
-        console.log("i can beelive that");
+        console.log(`${key}"i can beelive that"`);
     }
 })
 
