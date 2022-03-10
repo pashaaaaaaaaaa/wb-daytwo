@@ -11,14 +11,16 @@ function mapKey(){
 mapKey(mapFor)
 //========party2=======//
 
-mapFor.forEach((key) => {
+mapFor.forEach((_value, key) => {
     if((key % 3 === 0) && (key % 5 === 0)){
     console.log(`${key}i can beelive that`);
     }else if(key % 3 === 0){
         console.log(`${key}divaded the 3`)
     }else if(key % 5 === 0){
         console.log(`${key}oops here is 5`)
-    } 
+    }else{
+        console.log(key)
+    }
         
 })
 
