@@ -30,12 +30,13 @@ const arr = [["36", "не приватизирован", "4 собственни
 arr.forEach((item) => {
     let numHome = Number(item[0])
     let streetHome = item[3]
-    console.log(streetHome)
+    console.log(getHome(streetHome, numHome ))
 })
 
 function getHome(str){
-    str.forEach((item)=>{
-        
-    })
+    if ((numHome <= 40 && streetHome === "Ленина") || (numHome >= 56)) {
+        return true
+    }else{
+        return false
+    }
 }
-console.log(getHome(arr))
