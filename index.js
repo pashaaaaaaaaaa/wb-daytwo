@@ -18,7 +18,9 @@ mapFor.forEach((_value ,key) => {
         console.log(`${key} divaded the 3`)
     }else if(key % 5 === 0){
         console.log(`${key} oops here is 5`)
-    } 
+    }else(
+        console.log(key)
+    )
         
 })
 
