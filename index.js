@@ -4,27 +4,27 @@
 const mapFor = new Map<number, null>() 
 
 function mapKey(){
-    for(let i = 0; i <= 100; i++){
+    for(let i = 0; i < 100; i++){
         mapFor.set(i, null)
     }
 }
-mapKey(mapFor)
+mapKey()
 //========party2=======//
 
-mapFor.forEach((key) => {
+mapFor.forEach((_value ,key) => {
     if((key % 3 === 0) && (key % 5 === 0)){
-    console.log(`${key}i can beelive that`);
+        console.log(`${key} i can beelive that`);
     }else if(key % 3 === 0){
-        console.log(`${key}divaded the 3`)
+        console.log(`${key} divaded the 3`)
     }else if(key % 5 === 0){
-        console.log(`${key}oops here is 5`)
+        console.log(`${key} oops here is 5`)
     } 
         
 })
 
 
 //===========party3=========//
-const arr:string[][]  = [["36", "не приватизирован", "4 собственника", "Парковая"],
+const arr:string[][] = [["36", "не приватизирован", "4 собственника", "Парковая"],
 ["45", "приватизирован", "3 собственника", "Луговая"],
 ["56", "не приватизирован", "1 собственник", "Луговая"],
 ["56", "приватизирован", "5 собственников", "Ленина"],
@@ -43,4 +43,4 @@ function getHome(streetHome:string , numHome:number):boolean{
         return false
     }
 }
-
+ 
