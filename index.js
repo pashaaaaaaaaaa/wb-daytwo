@@ -33,7 +33,7 @@ arr.forEach((item) => {
     console.log(getHome(streetHome, numHome ))
 })
 
-function getHome(str){
+function getHome(streetHome, numHome){
     if ((numHome <= 40 && streetHome === "Ленина") || (numHome >= 56)) {
         return true
     }else{
